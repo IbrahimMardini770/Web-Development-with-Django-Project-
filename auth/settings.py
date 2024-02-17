@@ -38,8 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'register',
-    # 'crispy_forms',
+    'crispy_forms',
     # 'bootstrap4',
+    "crispy_bootstrap5",
 ]
 
 MIDDLEWARE = [
@@ -120,7 +121,9 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 # STATIC_ROOT = BASE_DIR / 'staticfiles'
-# CRISPY_TEMPLATE_PACK = 'bootstrap'
+CRISPY_TEMPLATE_PACK = 'bootstrap5'
+LOGIN_REDIRECT_URL = 'home'
+# LOGOUT_REDIRECT_URL = 'home'
 
 
 # Default primary key field type
